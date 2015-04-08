@@ -1,5 +1,10 @@
 require "brewerytown/version"
 
 module Brewerytown
-  # Your code goes here...
+  extend ActiveSupprt::Concern
+
+  module ClassMethods
+    def set_ingredients
+    end
+  end
 end
