@@ -10,7 +10,7 @@ describe Brewerytown do
     Yuengling
   end
 
-  describe ".bew_ingredients" do
+  describe ".brew_ingredients" do
 
     it "defines brew_ingredients" do
       expect(lager).to respond_to(:brew_ingredients)
@@ -47,10 +47,10 @@ describe Brewerytown do
       current_batch.add_ingredient(:barley)
       current_batch.add_ingredient(:hops)
       current_batch.add_ingredient(:yeast)
-      expect(current_batch.ingredients).to include(:water)
-      expect(current_batch.ingredients).to include(:barley)
-      expect(current_batch.ingredients).to include(:hops)
-      expect(current_batch.ingredients).to include(:yeast)
+      expect(current_batch.current_ingredients).to include(:water)
+      expect(current_batch.current_ingredients).to include(:barley)
+      expect(current_batch.current_ingredients).to include(:hops)
+      expect(current_batch.current_ingredients).to include(:yeast)
     end
 
     it "rejects duplicate ingredients" do
