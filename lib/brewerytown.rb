@@ -1,10 +1,5 @@
 require "brewerytown/version"
+require "brewerytown/brewable"
 
 module Brewerytown
-  extend ActiveSupprt::Concern
-
-  module ClassMethods
-    def set_ingredients
-    end
-  end
 end
