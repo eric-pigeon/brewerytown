@@ -14,7 +14,7 @@ module Brewerytown
     def add_ingredient(ingredient)
       @current_ingredients ||= []
       raise "Bad Ingredient" unless self.class.ingredients.include?(ingredient)
-      raise "Duplicate" if current_ingredients.include?(ingredient)
+      raise "Duplicate" if @current_ingredients.include?(ingredient)
       @current_ingredients << ingredient
     end
 
